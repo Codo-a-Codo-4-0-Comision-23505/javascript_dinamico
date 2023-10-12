@@ -22,3 +22,9 @@ function formDraw(divContent) {
 function exitMessageDraw(divContent) {
     // se los dejo de tarea...
 }
+
+function addItemList(divContent) {
+    var item = "<h2> Item </h2>"
+
+    divContent.innerHTML = item;
+}
