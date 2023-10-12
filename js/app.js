@@ -14,7 +14,13 @@ myForm.onsubmit = (event) => {
 
 var myButton = document.getElementById("addButton")
 myButton.onclick = () => {
-    addItemList(myPlaceholder)
+    fetch('https://api.coindesk.com/v1/bpi/currentprice.json') 
+    .then(response => response.json()) 
+    .then(data => { 
+        console.log(data)
+        addItemList(myPlaceholder, data.chartName)
+    });
+   
 }
 
 var myCleanButton = document.getElementById("cleanButton")

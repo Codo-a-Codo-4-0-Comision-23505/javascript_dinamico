@@ -23,8 +23,8 @@ function exitMessageDraw(divContent) {
     // se los dejo de tarea...
 }
 
-function addItemList(divContent) {
-    var item = "<h2> Item </h2>"
+function addItemList(divContent, template = "<h2> Item </h2>") {
+    var item = template
 
     divContent.innerHTML += item;
 }
