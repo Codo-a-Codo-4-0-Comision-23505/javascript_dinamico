@@ -26,5 +26,9 @@ function exitMessageDraw(divContent) {
 function addItemList(divContent) {
     var item = "<h2> Item </h2>"
 
-    divContent.innerHTML = item;
+    divContent.innerHTML += item;
+}
+
+function cleanList(divContent) {
+    divContent.innerHTML = "";
 }

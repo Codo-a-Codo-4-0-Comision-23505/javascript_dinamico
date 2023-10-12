@@ -16,3 +16,8 @@ var myButton = document.getElementById("addButton")
 myButton.onclick = () => {
     addItemList(myPlaceholder)
 }
+
+var myCleanButton = document.getElementById("cleanButton")
+myCleanButton.onclick = () => {
+    cleanList(myPlaceholder)
+}
